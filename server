@@ -1,0 +1,6 @@
+#!/bin/bash
+
+PORTA=7000
+
+xdg-open http://localhost:$PORTA
+php -S localhost:$PORTA -t .

@@ -36,6 +36,10 @@ $paginas = [
 	'home', 'posts', 'article', 'about', 'signin', 'signup'
 ];
 
+if ( ! isset($_GET['pagina']) || ! $_GET['pagina']) {
+	$_GET['pagina'] = $paginas[0];
+}
+
 if ( ! in_array($_GET['pagina'], $paginas)) {
 	$_GET['pagina'] = '404';
 }
