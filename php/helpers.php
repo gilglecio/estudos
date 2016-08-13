@@ -78,5 +78,6 @@ function required(array $post, array $campos, array &$errors)
  */
 function exibir_erros(array $errors)
 {
-	echo '<ul><li>' . implode('</li><li>', $errors) . '</li></ul>';
+	echo '<div class="alert alert-danger" role="alert">
+		<p>' . implode('</p><p>', $errors) . '</p></div>';
 }
